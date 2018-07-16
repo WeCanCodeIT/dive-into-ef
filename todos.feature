@@ -18,13 +18,6 @@ Feature: Todos
             | Feed the dog |
             | Feed the cat |
 
-    Scenario: Refreshing my todos
-        Given the following todos exist:
-            | Name         |
-            | Feed the dog |
-            | Feed the cat |
-        When I select the following option: "Refresh"
-        Then the screen should refresh and show an updated list of Todos
 
     Scenario: Viewing details of a specific todo
         Given the following Todos exist:
@@ -58,6 +51,14 @@ Feature: Todos
             | Name            |
             | Feed the cat    |
             | Feed the rabbit |
+
+    Scenario: Refreshing my todos
+        Given the following todos exist:
+            | Name         |
+            | Feed the dog |
+            | Feed the cat |
+        When I select the following option: "Refresh"
+        Then the screen should refresh and show an updated list of Todos
 
 # Next, write a scenario for updating a todo.
 # After you've written the scenario here,
