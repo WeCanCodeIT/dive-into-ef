@@ -22,6 +22,6 @@ public class TodoContext : DbContext
 }
 ```
 4. In the Package Manager Console, run the following commands:
-    a. `Enable-Migrations`
-    b. `Add-Migration InitialCreate` (InitialCreate is whatever name you want for this migration)
-    c. `Update-Database` Applies your migrations to the database (and creates the db if it doesn't exist).
+  - `Enable-Migrations`
+  - `Add-Migration InitialCreate` (InitialCreate is whatever name you want for this migration)
+  - `Update-Database` Applies your migrations to the database (and creates the db if it doesn't exist).
